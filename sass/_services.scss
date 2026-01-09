@@ -1,0 +1,25 @@
+.services-intro {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.services-grid {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+}

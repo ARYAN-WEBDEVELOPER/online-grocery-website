@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Cart | Fresh Grocery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+
+<div class="page-wrapper">
+<!-- ===== HEADER ===== -->
+<header>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <h1>Fresh Grocery</h1>
+        </div>
+
+        <!-- Hamburger Icon -->
+        <div class="menu-toggle" onclick="toggleMenu()">
+            ☰
+        </div>
+
+        <!-- Nav Links -->
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="cart.html">Cart</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<!-- ===== MAIN ===== -->
+<main>
+
+    <!-- Cart Title -->
+    <section class="cart-title">
+        <h2>Your Shopping Cart</h2>
+        <p>Review your items before checkout</p>
+    </section>
+
+    <!-- Cart Container -->
+   <section class="cart-container">
+
+    <!-- Cart Items -->
+    <div class="cart-items"></div>
+
+    <!-- Cart Summary -->
+    <aside class="cart-summary">
+        <h3>Order Summary</h3>
+        <p>Total: <strong id="cart-total">₹0</strong></p>
+        <button onclick="clearCart()">Clear Cart</button>
+    </aside>
+
+</section>
+
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer style="position: relative;top: 20px;" class="site-footer">
+    <div class="footer-container">
+
+        <div class="footer-box">
+            <h3>Fresh Grocery</h3>
+            <p>
+                Your trusted online grocery store delivering
+                fresh and quality products to your doorstep.
+            </p>
+        </div>
+
+        <div class="footer-box">
+            <h4>Quick Links</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+              <li><a href="cart.html">Cart</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-box">
+            <h4>Contact</h4>
+            <p>Email: support@freshgrocery.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <p>Faridabad, Haryana</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Fresh Grocery. All Rights Reserved.</p>
+    </div>
+</footer>
+</div>
+<script src="js/script.js"></script>
+
+</body>
+</html>

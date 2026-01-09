@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresh Grocery</title>
+    <link rel="shortcut icon" href="img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-logo">
+                <h1>Fresh Grocery</h1>
+            </div>
+
+            <!-- Hamburger Icon -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                ☰
+            </div>
+
+            <!-- Nav Links -->
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="products-section">
+            <h2 class="section-title">Our Fresh Products</h2>
+
+            <div class="products-grid">
+
+                <article class="product-card">
+                    <img src="img/fruits.jpg" alt="Apple">
+                    <h3>Fresh Apples</h3>
+                    <p class="price">₹120 / kg</p>
+                    <button onclick="addToCart('Fresh Apples', 120, 'img/fruits.jpg')">
+                        Add to Cart
+                    </button>
+
+                </article>
+
+                <article class="product-card">
+                    <img src="img/oats.jpg" alt="Milk">
+                    <h3>Oats</h3>
+                    <p class="price">₹60 / kg</p>
+                    <button onclick="addToCart('Oats', 60, 'img/oats.jpg')">
+                        Add to Cart
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img src="img/wheat.jpg" alt="Rice">
+                    <h3>Basmati Rice</h3>
+                    <p class="price">₹90 / kg</p>
+                    <button onclick="addToCart('Basmati Rice', 90, 'img/wheat.jpg')">
+                        Add to Cart
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img src="img/fena.jpg" alt="fena">
+                    <h3>Fena powerWash</h3>
+                    <p class="price">₹65 / kg</p>
+                    <button onclick="addToCart('Fena powerWash', 65, 'img/fena.jpg')">
+                        Add to Cart
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img src="img/harpic.jpg" alt="harpic">
+                    <h3>Harpic</h3>
+                    <p class="price">₹90 / Litre</p>
+                    <button onclick="addToCart('Harpic', 90, 'img/harpic.jpg')">
+                        Add to Cart
+                    </button>
+                </article>
+
+                <article class="product-card">
+                    <img src="img/juice.jpg" alt="juice">
+                    <h3>Fresh juice</h3>
+                    <p class="price">₹90 / Litre</p>
+                    <button onclick="addToCart('Fresh juice', 90, 'img/juice.jpg')">
+                        Add to Cart
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+
+            <div class="footer-box">
+                <h3>Fresh Grocery</h3>
+                <p>
+                    Your trusted online grocery store delivering
+                    fresh and quality products to your doorstep.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-box">
+                <h4>Contact</h4>
+                <p>Email: support@freshgrocery.com</p>
+                <p>Phone: +91 98765 43210</p>
+                <p>Faridabad, Haryana</p>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Fresh Grocery. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
